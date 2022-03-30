@@ -10,7 +10,7 @@ class Downloader(object):
     def __init__(
         self,
         cookie,
-        download_path=os.environ.get('FILE_PATH', './data'),
+        download_path=os.environ.get('FILE_PATH', '/content/ss'),
         pk='BCpkADawqM2OOcM6njnM7hf9EaK6lIFlqiXB0iWjqGWUQjU7R8965xUvIQNqdQbnDTLz0IAO7E6Ir2rIbXJtFdzrGtitoee0n1XXRliD-RH9A-svuvNW9qgo3Bh34HEZjXjG4Nml4iyz3KqF',
         brightcove_account_id=3695997568001,
     ):
