@@ -10,33 +10,27 @@ quick and dirty video downloader in python.
 You will need a skillshare premium account to access premium content.
 This script will not handle login for you.
 
-1. Log-in to skillshare in your browser and open up the developer console.
-(cmd-shift-c for chrome on mac)
+1. Download the [chrome extension](https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm/related "Cookie-Editor")
 
-2. Use it to grab your cookie by typing:
-```
-document.cookie
-```
+2. Log-in to skillshare in your browser click on the cookie-editor icon and copy the PHPSESSID
+
 
 3. Grab the PHPSESSID id xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 #### Example:
 ```
+import sys, os
 from downloader import Downloader
-
-cookie = "PHPSESSID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+phpsessid= sys.argv[1]
+cookie = "PHPSESSID="+phpsessid
 
 dl = Downloader(cookie=cookie)
 
 # download by class URL:
-dl.download_course_by_url('https://www.skillshare.com/classes/Art-Fundamentals-in-One-Hour/189505397')
+course_url = sys.argv[2]
+dl.download_course_by_url(course_url)
 
 # or by class ID:
 # dl.download_course_by_class_id(189505397)
-```
 
-4. (Optionally) run with docker and docker-compose:
-```
-docker-compose build
-docker-compose run --rm ssdl python example.py
 ```
