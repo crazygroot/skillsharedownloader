@@ -39,3 +39,7 @@ dl.download_course_by_url(course_url)
 python3 ss.py "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" "Link of the Course"
 
 ```
+#### Alternative Method:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hUUPDDql0QLul7lB8NQNaEEq-bbayEdE#scrollTo=xunEYHutBEv/]
+
+You can open colab Notebook to directly download the file into your Google drive.
