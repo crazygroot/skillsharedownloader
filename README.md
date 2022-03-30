@@ -34,3 +34,8 @@ dl.download_course_by_url(course_url)
 # dl.download_course_by_class_id(189505397)
 
 ```
+#### Usage:
+```
+python3 ss.py "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" "Link of the Course"
+
+```
